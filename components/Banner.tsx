@@ -28,6 +28,7 @@ const Banner = ({ netflixOriginals }: Props) => {
 					objectFit="cover"
 				/>
 			</div>
+			
 			<h1 className="text-2xl font-bold md:text-4xl lg:text-7xl">
 				{movie?.title || movie?.name || movie?.original_name}
 			</h1>
