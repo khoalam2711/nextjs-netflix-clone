@@ -39,6 +39,7 @@ const Row = ({ title, movies }: Props) => {
 					onClick={() => handleClick('left')}
 				/>
 
+				{/* Movies thumbnails */}
 				<div
 					className="flex items-center space-x-0.5 overflow-x-scroll md:space-x-2.5 md:p-2 scrollbar-hide"
 					ref={rowRef}

@@ -77,8 +77,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 			setLoading(false);
 		} catch (e) {
 			// TODO: Error UI
-			setLoading(false);
 			console.log(e);
+			setLoading(false);
 		}
 	};
 
@@ -95,8 +95,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 			setLoading(false);
 		} catch (e) {
 			// TODO: Error UI
+			window.alert(e);
 			setLoading(false);
-			console.log(e);
 		}
 	};
 
@@ -104,8 +104,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 		setLoading(true);
 		try {
 			await signOut(auth);
-			setLoading(false);
 			setUser(null);
+			setLoading(false);
 		} catch (e) {
 			console.log(e);
 			setLoading(false);
