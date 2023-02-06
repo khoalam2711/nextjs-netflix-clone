@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { FC } from 'react';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
+import MoviePreviewModal from '../components/MoviePreviewModal';
 import Row from '../components/Row';
 import useAuth from '../hooks/useAuth';
 import { Movie } from '../typings';
@@ -54,6 +55,7 @@ const Home: FC<Props> = ({
 					<Row title="Scary Movies" movies={horrorMovies} />
 					<Row title="Romance Movies" movies={romanceMovies} />
 					<Row title="Documentaries" movies={documentaries} />
+					<MoviePreviewModal/>
 				</section>
 			</main>
 		</div>
